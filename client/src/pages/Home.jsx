@@ -1,13 +1,14 @@
 import Stories from "../components/Stories";
-import Posts from "../components/Posts";
 import Share from "../components/Share";
+import Feed from "../components/Feed";
 
 const Home = () => {
   return (
     <div className="home">
-      <Stories />
-      <Share />
-      <Posts />
+      <div className="home__wrapper container">
+        <Share />
+        <Feed />
+      </div>
     </div>
   );
 };

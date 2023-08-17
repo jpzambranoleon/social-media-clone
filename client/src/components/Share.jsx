@@ -8,8 +8,8 @@ const Share = () => {
   const { currentUser } = useContext(AuthContext);
   return (
     <div className="share">
-      <div className="container">
-        <div className="top">
+      <div className="share-wrapper">
+        <div className="share-wrapper__top">
           <img src={currentUser.profilePic} alt="" />
           <input
             type="text"
@@ -17,7 +17,7 @@ const Share = () => {
           />
         </div>
         <hr />
-        <div className="bottom">
+        <div className="share-wrapper__bottom">
           <div className="left">
             <input type="file" id="file" style={{ display: "none" }} />
             <label htmlFor="file">

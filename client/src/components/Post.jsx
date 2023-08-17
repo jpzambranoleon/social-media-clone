@@ -15,8 +15,8 @@ const Post = ({ post }) => {
 
   return (
     <div className="post">
-      <div className="container">
-        <div className="user">
+      <div className="post-wrapper">
+        <div className="post-wrapper__user">
           <div className="userInfo">
             <img src={post.profilePic} alt="" />
             <div className="details">
@@ -31,11 +31,11 @@ const Post = ({ post }) => {
           </div>
           <MoreHorizIcon />
         </div>
-        <div className="content">
-          <p>{post.desc}</p>
+        <div className="post-wrapper__content">
+          <p className="desc">{post.desc}</p>
           <img src={post.img} alt="" />
         </div>
-        <div className="info">
+        <div className="post-wrapper__info">
           <div className="item">
             {liked ? <FavoriteOutlinedIcon /> : <FavoriteBorderOutlinedIcon />}
             12 Likes

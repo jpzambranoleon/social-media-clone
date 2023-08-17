@@ -1,5 +1,64 @@
 @use "../global/" as *;
 
+.header {
+  @include themify($themes) {
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .4s;
+    border-bottom: 1px solid themed("border");
+    .nav {
+      height: $header-height;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .left {
+        display: flex;
+        align-items: center;
+
+        .logo {
+          color: $first-color-light;
+          display: inline-flex;
+          align-items: center;
+          column-gap: .25rem;
+          font-weight: $font-semi-bold;
+          transition: .3s;
+
+          i   {
+            font-size: 1rem;
+          }
+
+          &:hover {
+            color: $first-color-alt;
+          }
+        }
+
+      }
+
+      .right {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        .user {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          font-weight: 500;
+          
+          img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        }
+      }
+    }
+  }
+}
+
 .navbar {
     @include themify($themes) {
       display: flex;

@@ -7,7 +7,7 @@ import PlaceIcon from "@mui/icons-material/Place";
 import LanguageIcon from "@mui/icons-material/Language";
 import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Posts from "../components/Posts";
+import Feed from "../components/Feed";
 
 const Profile = () => {
   return (
@@ -62,7 +62,7 @@ const Profile = () => {
             <MoreVertIcon />
           </div>
         </div>
-        <Posts />
+        <Feed />
       </div>
     </div>
   );
