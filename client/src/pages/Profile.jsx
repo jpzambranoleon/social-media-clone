@@ -12,7 +12,7 @@ import Feed from "../components/Feed";
 const Profile = () => {
   return (
     <div className="profile">
-      <div className="images">
+      <div className="profile-images">
         <img
           src="https://images.pexels.com/photos/13440765/pexels-photo-13440765.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt=""
@@ -24,8 +24,48 @@ const Profile = () => {
           className="profilePic"
         />
       </div>
-      <div className="profileContainer">
-        <div className="uInfo">
+      <div className="profile-container container">
+        <div className="profile-wrapper">
+          <div className="user-info">
+            <div className="user-info__name">
+              <span>Jane Doe</span>
+            </div>
+            <div className="user-info__socials">
+              <a href="http://facebook.com">
+                <FacebookTwoToneIcon fontSize="large" />
+              </a>
+              <a href="http://facebook.com">
+                <InstagramIcon fontSize="large" />
+              </a>
+              <a href="http://facebook.com">
+                <TwitterIcon fontSize="large" />
+              </a>
+              <a href="http://facebook.com">
+                <LinkedInIcon fontSize="large" />
+              </a>
+              <a href="http://facebook.com">
+                <PinterestIcon fontSize="large" />
+              </a>
+            </div>
+            <div className="user-info__extra">
+              <div className="location">
+                <div className="item">
+                  <PlaceIcon />
+                  <span>USA</span>
+                </div>
+                <div className="item">
+                  <LanguageIcon />
+                  <span>lama.dev</span>
+                </div>
+              </div>
+            </div>
+            <div className="follow">
+              <button>follow</button>
+              <EmailOutlinedIcon />
+              <MoreVertIcon />
+            </div>
+          </div>
+          {/*
           <div className="left">
             <a href="http://facebook.com">
               <FacebookTwoToneIcon fontSize="large" />
@@ -60,9 +100,11 @@ const Profile = () => {
           <div className="right">
             <EmailOutlinedIcon />
             <MoreVertIcon />
-          </div>
+  </div> */}
         </div>
-        <Feed />
+        <div className="user-feed">
+          <Feed />
+        </div>
       </div>
     </div>
   );
