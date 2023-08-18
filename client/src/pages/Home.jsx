@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="home">
       <div className="home__wrapper container">
+        <Stories />
         <Share />
         <Feed />
       </div>
