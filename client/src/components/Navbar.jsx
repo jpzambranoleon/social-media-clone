@@ -17,29 +17,24 @@ const Navbar = () => {
 
   return (
     <header className="header">
-      <nav className="nav container">
+      <nav className="nav">
         <div className="left">
           <Link className="logo" to="/" style={{ textDecoration: "none" }}>
             <span>J-Social</span>
             <i className="fa-solid fa-blog" />
           </Link>
-          {/*
-            <HomeOutlinedIcon />
+          <div className="search">
+            <SearchOutlinedIcon />
+            <input type="text" placeholder="Search..." />
+          </div>
+        </div>
 
+        <div className="right">
           {darkMode ? (
             <WbSunnyOutlinedIcon onClick={toggle} />
           ) : (
             <DarkModeOutlinedIcon onClick={toggle} />
           )}
-          <GridViewOutlinedIcon />
-          <div className="search">
-            <SearchOutlinedIcon />
-            <input type="text" placeholder="Search..." />
-          </div> */}
-        </div>
-
-        <div className="right">
-          <PersonOutlinedIcon />
           <EmailOutlinedIcon />
           <NotificationsOutlinedIcon />
           <div className="user">

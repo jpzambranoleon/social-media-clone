@@ -17,10 +17,13 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      margin-left: 1rem;
+      margin-right: 1rem;
 
       .left {
         display: flex;
         align-items: center;
+        gap: 2rem;
 
         .logo {
           color: $first-color-light;
@@ -36,6 +39,30 @@
 
           &:hover {
             color: $first-color-alt;
+          }
+        }
+
+        .search {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          border: 1px solid themed("border");
+          border-radius: 5px;
+          padding: 5px;
+  
+          input {
+            border: none;
+            width: 500px;
+            background-color: transparent;
+            color: themed("textColor");
+  
+            @include mobile{
+              display: none;
+            }
+  
+            @include tablet{
+              width: 200px;
+            }
           }
         }
 
@@ -77,6 +104,20 @@
       background-color: themed("bg");
       color:themed("textColor");
       z-index: 999;
+
+      max-width: 1024px;
+      margin-left: 1.5rem;
+      margin-right: 1.5rem;
+
+      @media (max-width: 350px) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      } 
+
+      @media (min-width: 1040px) {
+        margin-left: auto;
+        margin-right: auto;
+      }
   
       .left {
         display: flex;

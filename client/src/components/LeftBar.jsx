@@ -19,7 +19,7 @@ const LeftBar = () => {
 
   return (
     <div className="leftBar">
-      <div className="container">
+      <div className="leftBar-wrapper">
         <div className="menu">
           <div className="user">
             <img src={currentUser.profilePic} alt="" />

@@ -56,7 +56,7 @@ const Stories = () => {
   return (
     <Swiper
       slidesPerView={5}
-      spaceBetween={40}
+      spaceBetween={30}
       freeMode={true}
       modules={FreeMode}
       className="stories"

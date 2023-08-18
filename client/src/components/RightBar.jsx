@@ -1,7 +1,7 @@
 const RightBar = () => {
   return (
     <div className="rightBar">
-      <div className="container">
+      <div className="rightBar-wrapper">
         <div className="item">
           <span>Suggestions For You</span>
           <div className="user">

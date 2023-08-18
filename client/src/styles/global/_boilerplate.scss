@@ -9,7 +9,14 @@ html {
 }
 
 .container {
+
     max-width: 1024px;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
+
+    @media (min-width: 1024px) {
+        max-width: 765px;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
 }

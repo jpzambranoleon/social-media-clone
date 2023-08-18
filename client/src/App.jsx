@@ -26,8 +26,12 @@ function App() {
     return (
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar />
-        <div>
-          <Outlet />
+        <div className="page">
+          <LeftBar />
+          <div style={{ flex: 6 }}>
+            <Outlet />
+          </div>
+          <RightBar />
         </div>
       </div>
     );

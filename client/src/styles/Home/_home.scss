@@ -12,3 +12,13 @@
       }
     }
 }
+
+.page {
+  @include themify($themes) {
+    display: block;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+}
