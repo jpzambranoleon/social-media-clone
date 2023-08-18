@@ -5,15 +5,16 @@
       -webkit-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
       -moz-box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
       box-shadow: 0px 0px 25px -10px rgba(0, 0, 0, 0.38);
-      border-radius: 20px;
+      border-radius: 1rem;
       background-color: themed("bg");
       color: themed("textColor");
 
       .share-wrapper {
-        padding: 1rem;
+        //padding: 1rem;
         &__top {
+          padding: 0.8rem;
           display: flex;
-          align-items: center;
+          //align-items: center;
           gap: 20px;
 
           img {
@@ -24,14 +25,16 @@
           }
 
           input {
-            padding: 20px 10px;
+            padding: 0 0 0 0.5rem;
             background-color: transparent;
-            width: 65%;
+            width: 77%;
             color: themed("textColor");
+            border: none;
           }
         }
 
         &__bottom {
+          padding: 0.8rem;
           display: flex;
           align-items: center;
           justify-content: space-between;
